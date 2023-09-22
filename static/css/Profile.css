@@ -1,0 +1,180 @@
+ .u-section-1 {
+  background-image: none;
+  min-height: 910px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 15px 54px 0;
+}
+
+.u-section-1 .u-table-1 {
+  width: 950px;
+  margin: 20px calc(((100% - 1140px) / 2) + 51px) 0 auto;
+}
+
+.u-block-8ee1-26 {
+  height: 46px;
+}
+
+.u-block-8ee1-37 {
+  height: 46px;
+}
+
+.u-section-1 .u-btn-1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: -191px calc(((100% - 1140px) / 2) + 61px) 0 auto;
+  padding: 10px 34px 10px 33px;
+}
+
+.u-section-1 .u-line-1 {
+  transform-origin: right center 0px;
+  position: absolute;
+  top: 1px;
+}
+
+.u-section-1 .u-btn-2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 20px calc(((100% - 1140px) / 2) + 61px) 0 auto;
+  padding: 10px 34px 10px 33px;
+}
+
+.u-section-1 .u-btn-3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 20px calc(((100% - 1140px) / 2) + 61px) 25px auto;
+  padding: 10px 34px 10px 33px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-table-1 {
+    width: 940px;
+    margin-right: calc(((100% - 940px) / 2));
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: calc(((100% - 940px) / 2));
+  }
+
+  .u-section-1 .u-line-1 {
+    height: 1px;
+    margin-top: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: calc(((100% - 940px) / 2));
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: calc(((100% - 940px) / 2));
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-table-1 {
+    width: 720px;
+    margin-right: calc(((100% - 720px) / 2));
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: calc(((100% - 720px) / 2));
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: calc(((100% - 720px) / 2));
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: calc(((100% - 720px) / 2));
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-table-1 {
+    width: 540px;
+    margin-right: calc(((100% - 540px) / 2));
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: calc(((100% - 540px) / 2));
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: calc(((100% - 540px) / 2));
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: calc(((100% - 540px) / 2));
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-table-1 {
+    width: 340px;
+    margin-right: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: calc(((100% - 340px) / 2));
+  }
+}
+
+
+/* Add by myself*/
+/* Style the action buttons container */
+/* Style the action buttons container */
+#action-buttons {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin-top as needed to position the buttons under the table */
+  margin-bottom: 20px; /* Add margin between buttons and footer */
+}
+
+/* Style the Submit button */
+#submit-button {
+  background-color: #d3e4f7; /* Button background color */
+  color: #2a2323; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#submit-button:hover {
+  background-color: #a9c8e8; /* Darker background color on hover */
+}
+
+/* Style the Cancel button */
+#cancel-button {
+  background-color: #eae7e7; /* Button background color */
+  color: #2a2323; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#cancel-button:hover {
+  background-color: #c1bebe; /* Darker background color on hover */
+}

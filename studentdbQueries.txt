@@ -1,0 +1,27 @@
+
+CREATE TABLE internship.student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    stud_name VARCHAR(255) NOT NULL,
+    stud_id VARCHAR(20) NOT NULL,
+    stud_email VARCHAR(255) NOT NULL,
+    stud_phone VARCHAR(15) NOT NULL,
+    stud_programme VARCHAR(100),
+    stud_group INT,
+    stud_supervisor VARCHAR(255),
+    stud_company VARCHAR(255),
+    stud_resume BLOB, -- Assuming you want to store resumes as binary data (BLOB)
+    url_letter VARCHAR(255),
+    url_acceptance VARCHAR(255),
+    url_acknowledgement VARCHAR(255)
+);
+
+CREATE TABLE internship.company (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    company_name VARCHAR(255),
+    company_address VARCHAR(255),
+    company_contact VARCHAR(255),
+    company_email VARCHAR(255),
+    company_desc VARCHAR(1500),
+    work_desc VARCHAR(1500),
+    entry_req VARCHAR(1500)
+);

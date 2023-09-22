@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="*** Note:&nbsp;1. Please download these three document &amp;amp; fill in the form.&nbsp;2. Then upload to the PROFILE page">
+  <meta name="description" content="">
+  <title>Documents</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/nicepage.css')}}" media="screen">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='css/Documents.css')}}" media="screen">
+  <script class="u-script" type="text/javascript" src="{{ url_for ('static', filename='js/jquery.js')}}"
+    defer=""></script>
+  <script class="u-script" type="text/javascript" src="{{ url_for ('static', filename='js/nicepage.js')}}"
+    defer=""></script>
+  <link rel="icon" href="https://www.tarc.edu.my/images/tarIco.ico" type="image/x-icon">
+  <meta name="generator" content="Nicepage 5.17.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/header.png"
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Documents">
+  <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+  <header class="u-clearfix u-header u-header" id="sec-53d1">
+    <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+      <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px;">
+        <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+          href="#">
+          <svg class="u-svg-link" viewBox="0 0 24 24">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+          </svg>
+          <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect y="1" width="16" height="2"></rect>
+              <rect y="7" width="16" height="2"></rect>
+              <rect y="13" width="16" height="2"></rect>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="u-custom-menu u-nav-container">
+        <ul class="u-nav u-unstyled u-nav-1">
+          <li class="u-nav-item"><a
+              class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="{{ url_for('Documents')}}" style="padding: 10px 20px;">Documents</a>
+          </li>
+          <li class="u-nav-item"><a
+              class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="{{ url_for('Company')}}" style="padding: 10px 20px;">Company</a>
+          </li>
+          <li class="u-nav-item"><a
+              class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="{{ url_for('Profile')}}" style="padding: 10px 20px;">Profile</a>
+          </li>
+          <li class="u-nav-item"><a
+              class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="{{ url_for('Logout')}}" style="padding: 10px 20px;">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="u-custom-menu u-nav-container-collapse">
+        <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+          <div class="u-inner-container-layout u-sidenav-overflow">
+            <div class="u-menu-close"></div>
+            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('Documents')}}">Documents</a>
+              </li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('Company')}}">Company</a>
+              </li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('Profile')}}">Profile</a>
+              </li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('Logout')}}">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+      </div>
+    </nav><a href="https://nicepage.com"
+      class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-image u-logo u-image-1"
+      data-image-width="416" data-image-height="121">
+      <img src="{{ url_for ('static', filename='images/header.png')}}" class="u-logo-image u-logo-image-1">
+    </a>
+  </header>
+  <section class="u-clearfix u-section-1" id="sec-8b9a">
+    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+    <h2 class="u-text u-text-palette-2-base u-text-1">*** Note:&nbsp;<br>1. Please download these three document &amp;
+      fill in the form.&nbsp;<br>2. Then upload to the PROFILE page
+    </h2>
+    <div class="u-border-1 u-border-grey-75 u-container-style u-group u-palette-1-base u-shape-rectangle u-group-1">
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+        <h3 class="u-align-center u-custom-font u-font-montserrat u-text u-text-2">Documents</h3>
+      </div>
+    </div>
+    <div class="u-border-1 u-border-grey-75 u-border-no-top u-container-style u-group u-shape-rectangle u-group-2">
+      <div class="u-container-layout u-container-layout-2">
+        <div class="u-table u-table-responsive u-table-1">
+          <table class="u-table-entity">
+            <colgroup>
+              <col width="21.2%">
+              <col width="78.8%">
+            </colgroup>
+            <tbody class="u-table-body">
+              <tr style="height: 55px;">
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">FOCS_STUDF01 Indemnity Letter</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
+              </tr>
+              <tr style="height: 55px;">
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">FOCS_EmpF02 Company Acceptance</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
+              </tr>
+              <tr style="height: 55px;">
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">FOCS_STUDF02 Parent Acknowledgement</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="https://nicepage.com/website-mockup"
+          class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-1">Download<br>
+        </a>
+        <a href="https://nicepage.com/website-mockup"
+          class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-2">Download<br>
+        </a>
+        <a href="https://nicepage.com/website-mockup"
+          class="u-active-none u-border-2 u-border-active-palette-2-dark-1 u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-3">Download<br>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0927">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1"> © 2023 - TAR UC ITP<br>
+      </p>
+    </div>
+  </footer>
+  <section class="u-backlink u-clearfix u-grey-80">
+    <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+      <span>Website Templates</span>
+    </a>
+    <p class="u-text">
+      <span>created with</span>
+    </p>
+    <a class="u-link" href="" target="_blank">
+      <span>Website Builder Software</span>
+    </a>.
+  </section>
+  <section class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-dialog-section-5"
+    id="sec-a5bf">
+    <div class="u-container-style u-dialog u-radius-13 u-shape-round u-white u-dialog-1">
+      <div class="u-container-layout u-container-layout-1">
+        <p class="u-text u-text-default u-text-palette-1-base u-text-1">
+          <span style="font-weight: 700;">Logout from ITP ?</span>
+        </p>
+        <a href="Login.html"
+          class="u-border-2 u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-light-2 u-none u-radius-13 u-text-palette-1-base u-btn-1">
+          Yes</a>
+        <a href="https://nicepage.com/k/ranking-website-templates"
+          class="u-border-2 u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-light-2 u-radius-13 u-text-palette-1-base u-white u-btn-2">No</a>
+      </div><button class="u-dialog-close-button u-icon u-text-white u-icon-1"><svg class="u-svg-link"
+          preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style="">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-efe9"></use>
+        </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+          xml:space="preserve" class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-efe9">
+          <rect x="7" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3138 8.0002)" width="2" height="16">
+          </rect>
+          <rect x="0" y="7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3138 8.0002)" width="16" height="2">
+          </rect>
+        </svg></button>
+    </div>
+  </section>
+  <style>
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 625px;
+      min-height: 158px;
+      height: auto;
+      margin: 336px calc(((100% - 1140px) / 2) + 212px) 60px auto;
+    }
+
+    .u-dialog-section-5 .u-container-layout-1 {
+      padding: 0 30px;
+    }
+
+    .u-dialog-section-5 .u-text-1 {
+      font-size: 1.875rem;
+      margin: 16px auto 0;
+    }
+
+    .u-dialog-section-5 .u-btn-1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      background-image: none;
+      border-style: solid;
+      margin: 24px auto 0 111px;
+      padding: 0 56px 0 55px;
+    }
+
+    .u-dialog-section-5 .u-btn-2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      background-image: none;
+      border-style: solid;
+      margin: -42px 126px 0 auto;
+      padding: 0 56px 0 55px;
+    }
+
+    .u-dialog-section-5 .u-icon-1 {
+      width: 15px;
+      height: 15px;
+      left: auto;
+      top: 9px;
+      position: absolute;
+      right: 9px;
+      padding: 0;
+    }
+
+    @media (max-width: 1199px) {
+      .u-dialog-section-5 .u-dialog-1 {
+        width: 625px;
+        margin-right: calc(((100% - 940px) / 2) + 212px);
+      }
+
+      .u-dialog-section-5 .u-btn-2 {
+        margin-top: -42px;
+        margin-right: 126px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .u-dialog-section-5 .u-dialog-1 {
+        margin-right: calc(((100% - 720px) / 2) + 95px);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .u-dialog-section-5 .u-dialog-1 {
+        width: 540px;
+        margin-right: calc(((100% - 540px) / 2));
+      }
+
+      .u-dialog-section-5 .u-container-layout-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .u-dialog-section-5 .u-text-1 {
+        font-size: 1rem;
+      }
+
+      .u-dialog-section-5 .u-btn-1 {
+        margin-left: 66px;
+      }
+
+      .u-dialog-section-5 .u-btn-2 {
+        margin-right: 81px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .u-dialog-section-5 .u-dialog-1 {
+        width: 340px;
+        margin-right: calc(((100% - 340px) / 2));
+      }
+
+      .u-dialog-section-5 .u-btn-1 {
+        margin-left: 0;
+      }
+
+      .u-dialog-section-5 .u-btn-2 {
+        margin-right: 0;
+      }
+    }
+  </style>
+</body>
+
+</html>
