@@ -69,17 +69,14 @@ def UploadDocument():
             company_name_in_s3 = userName + "_" + userStudentId + "_company"
             s3 = boto3.resource('s3')
 
-            s3 = boto3.client('s3',
-                  region_name= region,
-                  aws_access_key_id='your_access_key',
-                  aws_secret_access_key='your_secret_key')
+   
 
             try:
                 print('pass0')
-                s3.Bucket(custombucket).put_object(Key=resume_name_in_s3, Body=resume)
-                s3.Bucket(custombucket).put_object(Key=company_name_in_s3, Body=company)
-                s3.Bucket(custombucket).put_object(Key=indemnity_name_in_s3, Body=indemnity)
-                s3.Bucket(custombucket).put_object(Key=parent_name_in_s3, Body=parent)
+                s3.put_object(Bucket=custombucket, Key=resume_name_in_s3, Body=resume)
+                s3.put_object(Bucket=custombucket, Key=company_name_in_s3, Body=company)
+                s3.put_object(Bucket=custombucket, Key=indemnity_name_in_s3, Body=indemnity)
+                s3.put_object(Bucket=custombucket, Key=parent_name_in_s3, Body=parent)
                 print('pass1')
                 bucket_location = boto3.client('s3').get_bucket_location(Bucket=custombucket)
                 s3_location = (bucket_location['LocationConstraint'])
